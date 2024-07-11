@@ -1,0 +1,449 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, nav {
+    font-family:'Lato', sans-serif;
+}
+
+body, button {
+    font-family:'Karla', sans-serif;
+}
+
+/* add background color for the page */
+.container {
+    background-color:#f3f0e9 ;
+    margin:auto;
+    max-width:1200px;
+}
+
+/* skip-links for accessibility */
+.skip-link {
+    position: absolute;
+    top: -400px;
+    left: 0px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+  
+.skip-link:focus {
+    top: 0;
+}
+
+/* mobile first */
+h1 {
+    font-size: 2.027rem(32.44px) ;  
+} 
+
+h2 {
+    font-size: 1.802rem(28.83px);
+}
+h3 {
+    font-size: 1.424rem(22.78px) ;
+
+}
+p {
+   font-size: 16px; 
+}
+
+
+/* ****nav *********/
+
+/* bg color */
+.wrapper-nav {
+    background-color:#000000 ;
+    padding: 10px;
+}
+/* logo */
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+/* nav li */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+/* nav a */
+nav a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+nav a:hover, a:focus {
+    color:#d69e3d;
+    border-color: #ffffff;
+}
+
+
+
+/* ******hero section******* */
+
+/* banner with image inside the text overlay */
+.hero {
+    position:relative;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-background.jpg) no-repeat center center ;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color:#ffffff;
+}
+/* hero button */
+.hero button {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color:#000000;
+    transition: 0.2s;
+    font-weight:bold;
+}
+
+.hero :hover, :focus {
+    color:#ffffff;
+    background-color: #966f2c;
+    border-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* *******section welcome with 5 pictures********** */
+/* set the margin to 2 sections */
+.welcome {
+    margin-top: 100px;
+}
+
+.welcome p {
+    color:#d69e3d;
+}
+/* grid of 5 photos */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(120px,120px,120px) ;
+    gap:20px;
+    padding: 20px;;
+    grid-template-areas:
+    "one one"
+    "two three"
+    "four five";
+}
+
+.grid1 {
+    grid-area: one;
+}
+.grid2 {
+    grid-area: two;
+}
+.grid3 {
+    grid-area: three;
+}
+.grid4 {
+    grid-area: four;
+}
+.grid5 {
+    grid-area: five;
+}
+
+.photos img {
+    width:100%;
+    height:auto;
+    display: block;
+}
+
+/* *************section services********** */
+/* set the margin width to the section */
+.offer {
+    padding-top: 100px;
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+
+.wwo {
+    color:#d69e3d;
+    
+}
+/* flex of 3 divs */
+.offers {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.offers img {
+    width: 200px;
+}
+
+/* *************section menu********** */
+/* set the background, margin, padding and flex of section */
+.container-menu {
+    position:relative;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coffee-shop.jpeg) no-repeat center center ;
+    background-size: cover;
+    margin-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color:#ffffff;
+}
+
+.container-menu p {
+    color:#d69e3d;
+}
+
+.menu button {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color:#000000;
+    transition: 0.2s;
+}
+
+.menu button:hover, button:focus {
+    color:#ffffff;
+    background-color: #966f2c;
+    border-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.locations button {
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    color:#ffffff;
+    border-color: #ffffff;
+    transition: 0.2s;
+}
+
+.locations button:hover, button:focus {
+    color:#000000;
+    background-color:#ffffff;
+    border-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* *************section aboutus********** */
+.about {
+    margin-top: 100px;
+}
+.about1 img {
+    width:100%;
+    height:auto;
+}
+
+.tag {
+    color: #d69e3d;
+}
+
+.about2 button {
+    padding: 10px;
+    text-decoration: none;
+    background-color:#000000;
+    color:#ffffff;
+    transition: 0.2s;
+}
+
+.about2 button:hover, :focus {
+    color:#ffffff;
+    background-color:#966f2c;
+    border-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* *************section testmonials********** */
+/* set the background margin padding */
+.testi {
+   background-color: #000000;
+   color:#ffffff;
+   padding:10px;
+   margin-top: 100px;;
+}
+.testimonial-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-1.jpeg) no-repeat center center;
+    position:relative;
+    background-size: cover;
+}
+
+.testimonial-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-2.jpeg) no-repeat center center;
+    position:relative;
+    background-size: cover;
+}
+
+.testimonial-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-3.jpeg) no-repeat center center;
+    position:relative;
+    background-size: cover;
+}
+
+.testi img{
+    width:100%;
+}
+
+.name {
+    color:#d69e3d;
+}
+
+
+/* *************section footer********** */
+footer {
+    background-color: #000000;
+    color:#ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:center;
+}
+
+
+
+/* *****tablet******** */
+
+@media screen and (min-width:768px) {
+    /* set the font size for table-layout*/
+    
+    h1 {
+        font-size: 2.986rem (47.78px) ;  
+    } 
+    
+    h2 {
+        font-size: 2.488rem (39.81px) ;
+    }
+    h3 {
+        font-size: 1.728rem (27.65px) ;
+    
+    }
+    p {
+       font-size: 1rem (16px); 
+    }
+
+    /* change the layout of photos */
+    .photos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:repeat(120px,120px) ;
+            gap:20px;
+            padding: 20px;
+            grid-template-areas:
+            "one one two three"
+            "one one four five";
+        }
+        
+        .grid1 {
+            grid-area: one;
+        }
+        .grid2 {
+            grid-area: two;
+        }
+        .grid3 {
+            grid-area: three;
+        }
+        .grid4 {
+            grid-area: four;
+        }
+        .grid5 {
+            grid-area: five;
+        }
+        
+        .photos img {
+            width:100%;
+            height:auto;
+            display: block;
+        }
+
+    /* change the layout of offers */
+    .offers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(120px,120px) ;
+        align-items: center;
+    }
+        
+        .offer-3 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        }
+
+        .offers img {
+            width: 200px;
+        }
+
+    /* change the layout of menu and location */
+
+    .container-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* change the layout of about us */
+    .about {
+        display: flex;
+        
+    }
+
+    /* change the layout of testimonials */
+    .testimonials {
+        display:flex;
+        justify-content:space-around;
+        gap: 10px;
+    }
+}
+
+
+/* *****desktop******** */
+@media screen and (min-width:1100px) {
+    /* set the font size for desktop layout*/
+    h1 {
+        font-size: 3.815rem (61.04px) ;  
+    } 
+    
+    h2 {
+        font-size: 3.052rem (48.83px) ;
+    }
+    h3 {
+        font-size: 1.953rem (31.25px) ;
+    
+    }
+    p {
+       font-size: 1rem (16px); 
+    }
+
+    /* change the margin of photos */
+    .photos {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /* change the layout of offers */
+    .offers {
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    /* change the margin of about */
+    .about {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /* change the margin of testimonials */
+    .testimonials {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
