@@ -37,14 +37,14 @@ body, button {
 
 /* mobile first */
 h1 {
-    font-size: 2.027rem(32.44px) ;  
+    font-size: 2.027rem ;  
 } 
 
 h2 {
-    font-size: 1.802rem(28.83px);
+    font-size: 1.802rem;
 }
 h3 {
-    font-size: 1.424rem(22.78px) ;
+    font-size: 1.424rem ;
 
 }
 p {
@@ -131,7 +131,7 @@ nav a:hover, a:focus {
 .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:repeat(120px,120px,120px) ;
+    grid-template-rows:120px 120px 120px ;
     gap:20px;
     padding: 20px;;
     grid-template-areas:
@@ -231,7 +231,6 @@ nav a:hover, a:focus {
 .locations button:hover, button:focus {
     color:#000000;
     background-color:#ffffff;
-    border-color: #ffffff;
     text-align: center;
     cursor: pointer;
 }
@@ -239,7 +238,9 @@ nav a:hover, a:focus {
 /* *************section aboutus********** */
 .about {
     margin-top: 100px;
+    margin-left: 20px;;
 }
+
 .about1 img {
     width:100%;
     height:auto;
@@ -252,6 +253,7 @@ nav a:hover, a:focus {
 .about2 button {
     padding: 10px;
     text-decoration: none;
+    text-transform: uppercase;
     background-color:#000000;
     color:#ffffff;
     transition: 0.2s;
@@ -271,24 +273,34 @@ nav a:hover, a:focus {
    background-color: #000000;
    color:#ffffff;
    padding:10px;
-   margin-top: 100px;;
+   margin-top: 100px;
 }
+
+.testimonials  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .testimonial-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-1.jpeg) no-repeat center center;
-    position:relative;
     background-size: cover;
+    height:350px ;
+    justify-content: flex-end;
 }
 
 .testimonial-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-2.jpeg) no-repeat center center;
-    position:relative;
     background-size: cover;
+    height:350px ;
+    justify-content: flex-end;
 }
 
 .testimonial-3 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-3.jpeg) no-repeat center center;
-    position:relative;
     background-size: cover;
+    height:350px ;
+    justify-content: flex-end;
 }
 
 .testi img{
@@ -317,25 +329,25 @@ footer {
     /* set the font size for table-layout*/
     
     h1 {
-        font-size: 2.986rem (47.78px) ;  
+        font-size: 2.986rem;  
     } 
     
     h2 {
-        font-size: 2.488rem (39.81px) ;
+        font-size: 2.488rem;
     }
     h3 {
-        font-size: 1.728rem (27.65px) ;
+        font-size: 1.728rem ;
     
     }
     p {
-       font-size: 1rem (16px); 
+       font-size: 1rem; 
     }
 
     /* change the layout of photos */
     .photos {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows:repeat(120px,120px) ;
+            grid-template-rows:120px 120px ;
             gap:20px;
             padding: 20px;
             grid-template-areas:
@@ -369,7 +381,7 @@ footer {
     .offers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:repeat(120px,120px) ;
+        grid-template-rows:120px 120px;
         align-items: center;
     }
         
@@ -391,16 +403,29 @@ footer {
 
     /* change the layout of about us */
     .about {
-        display: flex;
-        
+        display: flex;  
     }
 
+    .about1 {
+        width:50%;
+    }
+
+    .about2 {
+        width:50%;
+        margin-left: 10px;
+    }
     /* change the layout of testimonials */
     .testimonials {
         display:flex;
-        justify-content:space-around;
+        flex-direction: row;
         gap: 10px;
     }
+    
+    .testimonial-1, .testimonial-2, .testimonial-3 {
+        height:400px ;
+        align-items: flex-end;
+    }
+
 }
 
 
@@ -408,18 +433,18 @@ footer {
 @media screen and (min-width:1100px) {
     /* set the font size for desktop layout*/
     h1 {
-        font-size: 3.815rem (61.04px) ;  
+        font-size: 3.815rem ;  
     } 
     
     h2 {
-        font-size: 3.052rem (48.83px) ;
+        font-size: 3.052rem ;
     }
     h3 {
-        font-size: 1.953rem (31.25px) ;
+        font-size: 1.953rem ;
     
     }
     p {
-       font-size: 1rem (16px); 
+       font-size: 1rem; 
     }
 
     /* change the margin of photos */
