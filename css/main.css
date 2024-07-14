@@ -131,7 +131,6 @@ nav a:hover, a:focus {
 .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:120px 120px 120px ;
     gap:20px;
     padding: 20px;;
     grid-template-areas:
@@ -280,26 +279,27 @@ nav a:hover, a:focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: 10px;
 }
 
 .testimonial-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-1.jpeg) no-repeat center center;
     background-size: cover;
-    height:350px ;
+    height:600px ;
     justify-content: flex-end;
 }
 
 .testimonial-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-2.jpeg) no-repeat center center;
     background-size: cover;
-    height:350px ;
+    height:600px ;
     justify-content: flex-end;
 }
 
 .testimonial-3 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonial-3.jpeg) no-repeat center center;
     background-size: cover;
-    height:350px ;
+    height:600px ;
     justify-content: flex-end;
 }
 
@@ -347,7 +347,6 @@ footer {
     .photos {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows:120px 120px ;
             gap:20px;
             padding: 20px;
             grid-template-areas:
@@ -381,7 +380,6 @@ footer {
     .offers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:120px 120px;
         align-items: center;
     }
         
