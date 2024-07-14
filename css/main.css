@@ -109,7 +109,7 @@ nav a:hover, a:focus {
     font-weight:bold;
 }
 
-.hero :hover, :focus {
+.hero button:hover, :focus {
     color:#ffffff;
     background-color: #966f2c;
     border-color: #ffffff;
